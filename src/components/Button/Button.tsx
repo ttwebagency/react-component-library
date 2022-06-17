@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 
 export interface ButtonProps {
 	type: "button" | "submit" | "reset" | undefined,
@@ -8,8 +8,10 @@ export interface ButtonProps {
 	children: string
 };
 
-const Button = ({ type, size, onClick, disabled, children, ...props }) => {
-	return <button {...{ type, size, onClick, disabled }}>{children}</button>;
+const Button: FC<ButtonProps> = ({ type, size, onClick, disabled, children, ...props }) => {
+	return (
+		<button {...{ type, size, onClick, disabled }}>{children}</button>
+	);
 }
 
 export default Button;
