@@ -24,6 +24,8 @@ registry=https://registry.npmjs.org/
 
 The `authToken` value is the token from within this GitHub repository.
 
+To retrieve a token email: contact@thetinywebagency.com 
+
 ## Publish Changes
 To publish updates/changes made to the React Component Library:
 
