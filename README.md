@@ -7,6 +7,7 @@ A reusable React Component Library built using React, TypeScript and Rollup.
 + React (18.1.0)
 + TypeScript (4.7.3)
 + Rollup (2.75.5)
++ styled-components (5.3.5)
 
 ## Run
 ```
@@ -23,6 +24,8 @@ registry=https://registry.npmjs.org/
 ```
 
 The `authToken` value is the token from within this GitHub repository.
+
+To retrieve a token email: contact@thetinywebagency.com 
 
 ## Publish Changes
 To publish updates/changes made to the React Component Library:
