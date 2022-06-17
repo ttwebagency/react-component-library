@@ -1,11 +1,15 @@
 import React from "react";
 
 export interface ButtonProps {
-	label: string;
-}
-
-const Button = (props: ButtonProps) => {
-	return <button>{props.label}</button>
+	type: "button" | "submit" | "reset" | undefined,
+	onClick?: () => void,
+	size?: "small" | "medium" | "large",
+	disabled?: boolean,
+	children: string
 };
+
+const Button = ({ type, size, onClick, disabled, children, ...props }) => {
+	return <button {...{ type, size, onClick, disabled }}>{children}</button>;
+}
 
 export default Button;
