@@ -11,7 +11,7 @@ export interface ButtonProps {
 const Button: FC<ButtonProps> = ({ type, size, onClick, disabled, children, ...props }) => {
 	return (
 		<button {...{ type, size, onClick, disabled }}>{children}</button>
-	);
-}
+	)
+};
 
 export default Button;
