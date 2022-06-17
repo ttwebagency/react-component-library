@@ -1,4 +1,11 @@
 import React, { FC } from "react";
+import styled from "styled-components";
+
+const ButtonStyle = styled.button`
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+`;
 
 export interface ButtonProps {
 	type?: "button" | "submit" | "reset" | undefined,
@@ -18,7 +25,7 @@ const Button: FC<ButtonProps> = ({ type, url, onClick, size, disabled, children,
 		<a href={url} role="button">{children}</a>
 
 	const renderAsButton = () =>
-	<button {...{ type, size, onClick, disabled }}>{children}</button>
+	<ButtonStyle {...{ type, size, onClick, disabled }}>{children}</ButtonStyle>
 
 	return (
 		/*
