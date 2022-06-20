@@ -21,19 +21,19 @@ const Button: FC<ButtonProps> = ({ type, url, onClick, size, disabled, children,
 	// Check if the component has a url prop value that matches those listed
 	const isLink = url && (url.includes("http") || url.startsWith("#") || url.startsWith("mailto") || url.startsWith("/"));
 
-	// This method will render a link styled to appear as a button
+	// This method will render an <a> link styled to appear as a button
 	const renderAsLink = () =>
 		<a href={url} role="button">{children}</a>
 
 	// This method will render a <button> element
 	const renderAsButton = () =>
-	<ButtonStyle {...{ type, size, onClick, disabled }}>{children}</ButtonStyle>
+		<ButtonStyle {...{ type, size, onClick, disabled }}>{children}</ButtonStyle>
 
 	return (
 		/*
 			If 'url' prop is passed into the component with a value,
-			render as a link by calling the renderAsLink() method, otherwise,
-			render as a button by calling the renderAsButton() method.
+			render as a link element by calling the renderAsLink() method, otherwise,
+			render as a <button> element by calling the renderAsButton() method.
 		*/
 		isLink ? renderAsLink() : renderAsButton()
 	)
