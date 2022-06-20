@@ -3,7 +3,7 @@ import React, { FC } from "react";
 export interface ListProps {
     type: "ul" | "ol",
     list: []
-}
+};
 
 const List: FC<ListProps> = ({ type, list }) => {
 
