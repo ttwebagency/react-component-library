@@ -5,7 +5,7 @@ export interface ListProps {
     list: []
 };
 
-const List: FC<ListProps> = ({ type, list }) => {
+export const List: FC<ListProps> = ({ type, list }) => {
 
     // Loop over an object and map to an individual item in the list with a unique key
     const listItems = list.map(( item, index ) =>
@@ -36,5 +36,3 @@ const List: FC<ListProps> = ({ type, list }) => {
         listType ? renderOrderedList() : renderUnorderedList()
     );
 };
-
-export default List;

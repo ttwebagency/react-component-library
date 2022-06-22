@@ -1,4 +1,4 @@
-export { default as Button } from "./Button";
-export { default as Label } from "./Label";
-export { default as Layout } from "./Layout";
-export { default as List } from "./List";
+export { Button } from "./Button";
+export { Label } from "./Label";
+export { Layout } from "./Layout";
+export { List } from "./List";

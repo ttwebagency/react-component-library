@@ -5,11 +5,9 @@ export interface LabelProps {
     children: string
 };
 
-const Label: FC<LabelProps> = ({ name, children }) => {
+export const Label: FC<LabelProps> = ({ name, children }) => {
      
     return (
         <label htmlFor={name}>{children}</label>
     )
 };
-
-export default Label;

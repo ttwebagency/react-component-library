@@ -4,7 +4,7 @@ export interface LayoutProps {
     children: string
 };
 
-const Layout: FC<LayoutProps> = ({ children }) => {
+export const Layout: FC<LayoutProps> = ({ children }) => {
 
     return (
         <main role="main">
@@ -12,5 +12,3 @@ const Layout: FC<LayoutProps> = ({ children }) => {
         </main>
     )
 };
-
-export default Layout;
