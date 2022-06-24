@@ -65,6 +65,6 @@ import { Layout, Button, Link } from "@ttwebagency/react-component-library";
 
 ## Button component
 
-| Props              |                                             |
+| Props              | Values                                      |
 | ------------------ | --------------------------------------------|
-| type (optional)    | "button" | "submit" | "reset" | undefined   |
+| type (optional)    | "button" / "submit" / "reset" / undefined   |
