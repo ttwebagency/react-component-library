@@ -1,6 +1,8 @@
 # React Component Library
 
-A reusable React Component Library built using React, TypeScript and Rollup.
+An open-source, reusable React Component Library built using React, TypeScript and Rollup.
+
+The `react-component-library` is hosted on GitHub.
 
 ## Technology Stack
 
@@ -14,38 +16,55 @@ A reusable React Component Library built using React, TypeScript and Rollup.
 npm run build
 ```
 
-## Update .npmrc file
-The `.npmrc` global configuration file needs to be updated with the credentials to use the React Component Library within a React application.
+## Updating & Publishing the Component Library
 
+To make changes to the `react-component-library` code:
+
++ `pull` the `main` branch to get the changes locally.
++ Create a feature branch off the `main` branch with the naming convention of: `feat/new-component`.
++ Commit the changes on the feature branch and create a `Pull Request (PR)` to merge the change back into the `main` branch.
++ Once the PR has been approved, `squash and merge` the change into the `main` branch to add the change to the production code.
++ Update the version number within the `package.json` file using `npm version major | minor | patch` command in the terminal.
++ Publish the package to `npm` using the `npm publish` command. 
+
+## Install
+
+The steps used to install and use the `react-component-library`.
+
+### Setup the .npmrc configuration file
+
+To use the `react-component-library` in your React application, first update the global `.npmrc` configuration file. This needs to be updated with the following credentials:
 ```
 registry=https://registry.npmjs.org/
 @ttwebagency:registry=https://npm.pkg.github.com/
 //npm.pkg.github.com/:_authToken=AUTH_TOKEN_HERE
 ```
+The `authToken=AUTH_TOKEN_HERE` value should be replaced with an Auth Token. A token can be requested by emailing: contact@thetinywebagency.com
 
-The `authToken` value is the token from within this GitHub repository.
+### Install the package
 
-To retrieve a token email: contact@thetinywebagency.com 
-
-## Publish Changes
-To publish updates/changes made to the React Component Library:
-
-+ Create a Pull Request (PR) to merge the changes into the `main` branch.
-+ Once merged, increase the version number following semantic versioning in the `package.json` file.
-
-```
-npm publish
-```
-
-The Component Library is created as a package and is hosted within GitHub.
-
-## Import the Component Library
-Once the React Component Library is published, it can be imported into a React application.
+In your React application folder, install the `react-component-library` using `npm`:
 ```
 npm install @ttwebagency/react-component-library
 ```
-
-To import a component from the library inside a React component within a React application:
-```javascript
-import { Button } from "@ttwebagency/react-component-library";
+This will install the latest version. To install a specific version of the `react-component-library` use this command:
 ```
+npm install @ttwebagency/react-component-library@0.5.3
+```
+
+## Components
+
+Once the `react-component-library` has been installed, you can use the components within your React application.
+
+### Import Components
+
+Begin by importing the library and the components required, into your React application, like so:
+```javascript
+import { Layout, Button, Link } from "@ttwebagency/react-component-library";
+```
+
+## Button component
+
+| Props              |                                             |
+| ------------------ | --------------------------------------------|
+| type (optional)    | "button" | "submit" | "reset" | undefined   |
