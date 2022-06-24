@@ -34,5 +34,5 @@ export const List: FC<ListProps> = ({ type, list }) => {
             'ul', an unordered list will be rendered.
         */
         listType ? renderOrderedList() : renderUnorderedList()
-    );
+    )
 };
