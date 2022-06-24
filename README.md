@@ -63,8 +63,52 @@ Begin by importing the library and the components required, into your React appl
 import { Layout, Button, Link } from "@ttwebagency/react-component-library";
 ```
 
-## Button component
+### Button component
 
 | Props              | Values                                      |
 | ------------------ | --------------------------------------------|
 | type (optional)    | "button" / "submit" / "reset" / undefined   |
+| ------------------ | --------------------------------------------|
+| url (optional)     | Add a URL value that will render as a link  |
+| ------------------ | --------------------------------------------|
+| onClick (optional) | Call JavaScript methods on button click     |
+| ------------------ | --------------------------------------------|
+| size (optional)    | "small" / "medium" / "large"                |
+| ------------------ | --------------------------------------------|
+| target (optional)  | Opens a link in a new tab/windows           |
+| ------------------ | --------------------------------------------|
+| disabled (optional)| TRUE/FALSE to set button to be disabled     |
+| ------------------ | --------------------------------------------|
+| children           | Button label/text                           |
+
+### Label component
+
+| Props              | Values                                      |
+| ------------------ | --------------------------------------------|
+| name               | The for attribute value                     |
+| ------------------ | --------------------------------------------|
+| children           | Label text                                  |
+
+### Layout component
+
+| Props              | Values                                      |
+| ------------------ | --------------------------------------------|
+| children           | Content within the layout component         |
+
+### Link component
+
+| Props              | Values                                      |
+| ------------------ | --------------------------------------------|
+| url                | The href of the link                        |
+| ------------------ | --------------------------------------------|
+| target (optional)  | Opens a link in a new tab/windows           |
+| ------------------ | --------------------------------------------|
+| children           | Link label/text                             |
+
+### List component
+
+| Props              | Values                                      |
+| ------------------ | --------------------------------------------|
+| type               | "ul" / "ol"                                 |
+| ------------------ | --------------------------------------------|
+| list               | Array                                       |
