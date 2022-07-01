@@ -80,6 +80,15 @@ import { Layout, Button, Link } from "@ttwebagency/react-component-library";
 | disabled (optional)| TRUE/FALSE to set button to be disabled     |
 | children           | Button label/text                           |
 
+### Image component
+
+| Props              | Values                                      |
+| ------------------ | --------------------------------------------|
+| src                | path of the image                           |
+| width              | width of the image                          |
+| height             | height of the image                         |
+| alt                | text within the alt attribute               |
+
 ### Label component
 
 | Props              | Values                                      |
