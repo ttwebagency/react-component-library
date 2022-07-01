@@ -4,6 +4,11 @@ An open-source, reusable React Component Library built using React, TypeScript a
 
 The `react-component-library` is hosted on GitHub.
 
+## Requirements
+
++ Node (16.13.2 and above)
++ npm (8.1.2 and above)
+
 ## Technology Stack
 
 + React (18.1.0)

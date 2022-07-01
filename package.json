@@ -23,6 +23,10 @@
   "scripts": {
     "build": "rollup -c"
   },
+  "engines": {
+    "node": ">=16.13.2",
+    "npm": ">=8.1.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ttwebagency/react-component-library.git"
