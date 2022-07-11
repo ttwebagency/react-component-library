@@ -77,6 +77,7 @@ import { Layout, Button, Link } from "@ttwebagency/react-component-library";
 | onClick (optional) | Call JavaScript methods on button click     |
 | size (optional)    | "small" / "medium" / "large"                |
 | target (optional)  | Opens a link in a new tab/windows           |
+| className (opt)    | Add a class attribute to the button         |
 | disabled (optional)| TRUE/FALSE to set button to be disabled     |
 | children           | Button label/text                           |
 
