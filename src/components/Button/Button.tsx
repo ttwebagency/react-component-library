@@ -24,22 +24,23 @@ export interface ButtonProps {
 	onClick?: () => void,
 	size?: "small" | "medium" | "large",
 	target?: string,
+	className?: string,
 	disabled?: boolean,
 	children: string
 };
 
-export const Button: FC<ButtonProps> = ({ type, url, onClick, size, target, disabled, children, ...props }) => {
+export const Button: FC<ButtonProps> = ({ type, url, onClick, size, target, className, disabled, children, ...props }) => {
 
 	// Check if the component has a url prop value that matches those listed
 	const isLink = url && (url.includes("http") || url.startsWith("#") || url.startsWith("mailto") || url.startsWith("/"));
 
 	// This method will render an <a> link styled to appear as a button
 	const renderAsLink = () =>
-		<LinkStyle href={url} role="button" {...{ target }}>{children}</LinkStyle>
+		<LinkStyle href={url} role="button" {...{ target, className }}>{children}</LinkStyle>
 
 	// This method will render a <button> element
 	const renderAsButton = () =>
-		<ButtonStyle {...{ type, size, onClick, disabled }}>{children}</ButtonStyle>
+		<ButtonStyle {...{ type, size, onClick, className, disabled }}>{children}</ButtonStyle>
 
 	return (
 		/*
