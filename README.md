@@ -70,50 +70,117 @@ import { Layout, Button, Link } from "@ttwebagency/react-component-library";
 
 ### Button component
 
-| Props              | Values                                      |
-| ------------------ | --------------------------------------------|
-| type (optional)    | "button" / "submit" / "reset" / undefined   |
-| url (optional)     | Add a URL value that will render as a link  |
-| onClick (optional) | Call JavaScript methods on button click     |
-| size (optional)    | "small" / "medium" / "large"                |
-| target (optional)  | Opens a link in a new tab/windows           |
-| className (opt)    | Add a class attribute to the button         |
-| disabled (optional)| TRUE/FALSE to set button to be disabled     |
-| children           | Button label/text                           |
+```javascript
+import { Button } from "@ttwebagency/react-component-library";
+```
+
+Renders a `<button>` or `<a>` element within the application.
+
+```javascript
+// Will render with the default type="button"
+<Button>Button</Button>
+
+// Will render with the type="submit"
+<Button type="submit">Button</Button>
+
+// Will render the Button as a link
+<Button url="https://example.com">Button</Button>
+
+// Add target attribute to open in a new browser tab/window
+<Button url="https://example.com" target="blank">Button</Button>
+
+// Call a method
+<Button onClick={methodName}>Button</Button>
+
+// Disable the Button
+<Button disabled>Button</Button>
+```
 
 ### Image component
 
-| Props              | Values                                      |
-| ------------------ | --------------------------------------------|
-| src                | path of the image                           |
-| width              | width of the image                          |
-| height             | height of the image                         |
-| alt                | text within the alt attribute               |
+```javascript
+import { Image } from "@ttwebagency/react-component-library";
+```
+
+Renders an `<img>` element within the application.
+
+```javascript
+<Image src="img/imageone.jpg" width="200" height="200" alt="Example image." />
+```
 
 ### Label component
 
-| Props              | Values                                      |
-| ------------------ | --------------------------------------------|
-| name               | The for attribute value                     |
-| children           | Label text                                  |
+```javascript
+import { Label } from "@ttwebagency/react-component-library";
+```
+
+Render a `<label>` element for forms within the application. The `name` prop value should be the same as the `id` attribute value of the form field.
+
+```javascript
+<Label name="firstName">First name:</Label>
+```
 
 ### Layout component
 
-| Props              | Values                                      |
-| ------------------ | --------------------------------------------|
-| children           | Content within the layout component         |
+```javascript
+import { Layout } from "@ttwebagency/react-component-library";
+```
+
+Apply a component that allows a consistant layout across multiple pages within the application. Ideal for header and footer components to be applied.
+
+Adds the `<main>` element to the application.
+
+```javascript
+<Layout>
+    <p>The page content goes here.</p>
+</Layout>
+```
 
 ### Link component
 
-| Props              | Values                                      |
-| ------------------ | --------------------------------------------|
-| url                | The href of the link                        |
-| target (optional)  | Opens a link in a new tab/windows           |
-| children           | Link label/text                             |
+```javascript
+import { Link } from "@ttwebagency/react-component-library";
+```
+
+Renders an `<a>` element within the application.
+
+```javascript
+// Render a link
+<Link url="https://example.com">Link</Link>
+
+// Render a link that opens a new browser tab/window
+<Link url="https://example.com" target="blank">Link</Link>
+```
 
 ### List component
 
-| Props              | Values                                      |
-| ------------------ | --------------------------------------------|
-| type               | "ul" / "ol"                                 |
-| list               | Array                                       |
+```javascript
+import { List } from "@ttwebagency/react-component-library";
+```
+Renders a list element as either a `<ul>` unordered list, or `<ol>` ordered list, within the application. This will default to an `<ul>` unordered list.
+
+```javascript
+// Create an array of users representing our data
+const App = () => {
+
+    const Users = [
+        "Dan",
+        "Bob",
+        "Pearl",
+    ];
+
+    return (
+        // Render the components here
+    );
+}
+```
+
+We place the `<List />` component in the `return` statement to render.
+
+```javascript
+// Render the list as an unordered list
+<List list={users} />
+
+// Render the list as an ordered list
+<List type="ol" list={users} />
+```
