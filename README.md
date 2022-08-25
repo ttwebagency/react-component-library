@@ -157,6 +157,7 @@ Renders an `<a>` element within the application.
 ```javascript
 import { List } from "@ttwebagency/react-component-library";
 ```
+
 Renders a list element as either a `<ul>` unordered list, or `<ol>` ordered list, within the application. This will default to an `<ul>` unordered list.
 
 ```javascript
@@ -183,4 +184,18 @@ We place the `<List />` component in the `return` statement to render.
 
 // Render the list as an ordered list
 <List type="ol" list={users} />
+```
+
+### Card component
+
+```javascript
+import { Card } from "@ttwebagency/react-component-library";
+```
+
+Render a card component to display content.
+
+```javascript
+<Card>
+    <p>This is a Card.</p>
+</Card>
 ```
