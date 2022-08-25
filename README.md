@@ -6,15 +6,15 @@ The `react-component-library` is hosted on GitHub.
 
 ## Requirements
 
-+ Node (16.13.2 and above)
-+ npm (8.1.2 and above)
++ `Node` (16.13.2 and above)
++ `npm` (8.1.2 and above)
 
 ## Technology Stack
 
-+ React (18.1.0)
-+ TypeScript (4.7.3)
-+ Rollup (2.75.5)
-+ styled-components (5.3.5)
++ `React` (18.1.0)
++ `TypeScript` (4.7.3)
++ `Rollup` (2.75.5)
++ `styled-components` (5.3.5)
 
 ## Run
 ```
