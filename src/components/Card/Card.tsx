@@ -1,12 +1,14 @@
 import React, { FC } from "react";
 
 export interface CardProps {
-
+    children: string
 };
 
-export const Card: FC<CardProps> = () => {
+export const Card: FC<CardProps> = ({ children }) => {
 
     return (
-        <h1>Card</h1>
+        <div>
+            {children}
+        </div>
     )
 };
