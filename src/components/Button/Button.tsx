@@ -15,7 +15,7 @@ export interface ButtonProps {
 	size?: "small" | "medium" | "large",
 	target?: string,
 	disabled?: boolean,
-	children: string
+	children: any
 };
 
 export const Button: FC<ButtonProps> = ({ type, url, onClick, size, target, disabled, children }) => {

@@ -21,7 +21,7 @@ const CardContentStyling = styled.div`
 `;
 
 export interface CardProps {
-    children: string
+    children: any
 };
 
 export const Card: FC<CardProps> = ({ children }) => {

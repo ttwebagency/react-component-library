@@ -3,7 +3,7 @@ import React, { FC } from "react";
 export interface LinkProps {
     url: string,
     target?: string,
-    children: string
+    children: any
 }
 
 export const Link: FC<LinkProps> = ({ url, target, children }) => {
