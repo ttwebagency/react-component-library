@@ -172,6 +172,7 @@ const App = () => {
 
     return (
         // Render the components here
+        <List list={users} />
     );
 }
 ```
