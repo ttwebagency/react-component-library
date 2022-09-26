@@ -28,7 +28,7 @@ export interface ButtonProps {
 	children: string
 };
 
-export const Button: FC<ButtonProps> = ({ type, url, onClick, size, target, disabled, children, ...props }) => {
+export const Button: FC<ButtonProps> = ({ type, url, onClick, size, target, disabled, children }) => {
 
 	// Check if the component has a url prop value that matches those listed
 	const isLink = url && (url.includes("http") || url.startsWith("#") || url.startsWith("mailto") || url.startsWith("/"));
