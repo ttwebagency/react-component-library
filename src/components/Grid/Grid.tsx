@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 
+// https://stackoverflow.com/questions/52404958/using-styled-components-with-typescript-prop-does-not-exist
 const GridStyles = styled("div")<GridProps>`
     display: flex;
     flex-direction: ${props => props.isRow ? "row" : "column"};
