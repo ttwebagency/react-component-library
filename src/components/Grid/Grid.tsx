@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const GridStyles = styled.div`
     display: flex;
-    flex-direction: ${props => props.isRow ? "row" : "column"};
 `;
 
 export interface GridProps {

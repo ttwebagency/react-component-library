@@ -1,5 +1,6 @@
 export { Button } from "./Button";
 export { Card } from "./Card";
+export { Grid } from "./Grid";
 export { GridContainer } from "./GridContainer";
 export { Image } from "./Image";
 export { Label } from "./Label";
