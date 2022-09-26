@@ -1,13 +1,13 @@
-import React, { FC } from "react";
+import React from "react";
 
-export interface ImageProps {
+export type ImageProps = {
     src: string,
     height: string,
     width: string,
     alt: string
 }
 
-export const Image: FC<ImageProps> = ({ src, height, width, alt }) => {
+export const Image = ({ src, height, width, alt }: ImageProps) => {
 
     return (
         <img {...{ src, height, width, alt }} />
