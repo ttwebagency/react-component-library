@@ -68,6 +68,20 @@ Begin by importing the library and the components required, into your React appl
 import { Layout, Button, Link } from "@ttwebagency/react-component-library";
 ```
 
+### Grid Container component
+
+```javascript
+import { GridContainer } from "@ttwebagency/react-component-library";
+````
+
+Renders a `<div>` element around the page content within the `Grid` to set centre the content on the page and set the maximum-width of the content for large screens.
+
+```javascript
+<GridContainer>
+    // The Grid is placed here
+</GridContainer>
+```
+
 ### Button component
 
 ```javascript
