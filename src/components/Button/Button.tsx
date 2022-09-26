@@ -1,21 +1,11 @@
 import React, { FC } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 // Shared CSS properties for the <button> and link elements
-const ButtonStyling = css`
+const ButtonStyle = styled.button`
 	display: inline-block;
 	text-decoration: none;
 	text-align: center;
-`;
-
-// Styling for the <button> element
-const ButtonStyle = styled.button`
-	${ButtonStyling}
-`;
-
-// Styling for the link element
-const LinkStyle = styled.a`
-	${ButtonStyling}
 `;
 
 export interface ButtonProps {
@@ -35,7 +25,7 @@ export const Button: FC<ButtonProps> = ({ type, url, onClick, size, target, disa
 
 	// This method will render an <a> link styled to appear as a button
 	const renderAsLink = () =>
-		<LinkStyle href={url} role="button" {...{ target }}>{children}</LinkStyle>
+		<ButtonStyle as="a" href={url} role="button" {...{ target }}>{children}</ButtonStyle>
 
 	// This method will render a <button> element
 	const renderAsButton = () =>
