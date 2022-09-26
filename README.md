@@ -74,7 +74,7 @@ import { Layout, Button, Link } from "@ttwebagency/react-component-library";
 import { GridContainer } from "@ttwebagency/react-component-library";
 ````
 
-Renders a `<div>` element around the page content within the `Grid` to set centre the content on the page and set the maximum-width of the content for large screens.
+Renders a `<div>` element around the `Grid` to centre the content of the page and set the maximum-width of the content for large screens.
 
 ```javascript
 <GridContainer>
