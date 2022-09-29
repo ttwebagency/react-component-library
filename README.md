@@ -87,7 +87,7 @@ Renders a `<button>` or `<a>` element within the application.
 <Button url="https://example.com">Button</Button>
 
 // Add target attribute to open in a new browser tab/window
-<Button url="https://example.com" target="blank">Button</Button>
+<Button url="https://example.com" openAsTab>Button</Button>
 
 // Call a method
 <Button onClick={methodName}>Button</Button>
