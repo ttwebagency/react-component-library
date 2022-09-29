@@ -108,6 +108,24 @@ Renders an `<img>` element within the application.
 <Image src="img/imageone.jpg" width="200" height="200" alt="Example image." />
 ```
 
+To apply `lazy loading` use the `lazyLoad` prop:
+
+```javascript
+<Image src="img/imageone.jpg" width="200" height="200" alt="Example image." lazyLoad />
+```
+
+If a value is passed into the `url` prop, the image will be wrapped inside a link.
+
+```javascript
+<Image url="https://example.com" src="img/imageone.jpg" width="200" height="200" alt="Example image." />
+```
+
+To open a link in a new browser tab/window, use the `openAsTab` prop:
+
+```javascript
+<Image url="https://example.com" src="img/imageone.jpg" width="200" height="200" alt="Example image." openAsTab />
+```
+
 ### Label component
 
 ```javascript
