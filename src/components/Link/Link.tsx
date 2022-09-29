@@ -9,6 +9,6 @@ export interface LinkProps {
 export const Link: FC<LinkProps> = ({ url, openAsTab, children }) => {
 
     return (
-        <a href={url} target={openAsTab ? 'blank' : undefined}>{children}</a>
+        <a href={url} target={openAsTab ? "blank" : undefined}>{children}</a>
     )
 };
