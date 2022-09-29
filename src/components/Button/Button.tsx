@@ -8,7 +8,7 @@ const ButtonStyle = styled.button`
 	text-align: center;
 `;
 
-export interface ButtonProps {
+type ButtonProps = {
 	type?: "button" | "submit" | "reset" | undefined,
 	url?: string,
 	onClick?: () => void,
