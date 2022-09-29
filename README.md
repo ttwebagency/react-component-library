@@ -167,7 +167,7 @@ Renders an `<a>` element within the application.
 <Link url="https://example.com">Link</Link>
 
 // Render a link that opens a new browser tab/window
-<Link url="https://example.com" target="blank">Link</Link>
+<Link url="https://example.com" openAsTab>Link</Link>
 ```
 
 ### List component

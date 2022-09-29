@@ -2,13 +2,13 @@ import React, { FC } from "react";
 
 export interface LinkProps {
     url: string,
-    target?: string,
+    openAsTab?: boolean,
     children: string
 }
 
-export const Link: FC<LinkProps> = ({ url, target, children }) => {
+export const Link: FC<LinkProps> = ({ url, openAsTab, children }) => {
 
     return (
-        <a href={url} {...{ target }}>{children}</a>
+        <a href={url} target={openAsTab ? 'blank' : undefined}>{children}</a>
     )
 };
