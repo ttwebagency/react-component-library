@@ -87,6 +87,10 @@ Render an `SVG` icon.
 <Icon iconName="home" color="red" />
 ```
 
+Icons available:
+
++ `home` - home icon
+
 ### Button component
 
 ```javascript
