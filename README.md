@@ -113,6 +113,13 @@ Renders a `<button>` or `<a>` element within the application.
 
 // Disable the Button
 <Button disabled>Button</Button>
+
+/*
+Button has an icon.
+Renders if the icon prop is passed with a string value.
+The string must match the name of an icon declared within the switch statement of the Icon component.
+*/
+<Button icon="home">Button with Icon</Button>
 ```
 
 ### Image component
