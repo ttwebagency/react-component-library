@@ -68,6 +68,25 @@ Begin by importing the library and the components required, into your React appl
 import { Layout, Button, Link } from "@ttwebagency/react-component-library";
 ```
 
+### Icon component
+
+```javascript
+import { Icon } from "@ttwebagency/react-component-library";
+```
+
+Render an `SVG` icon. 
+
+```javascript
+// Will render the home SVG icon with the default colour and size
+<Icon iconName="home" />
+
+// Set the size (height/width) of the icon using the size prop
+<Icon iconName="home" size={24} />
+
+// Set the colour of the icon using the color prop
+<Icon iconName="home" color="red" />
+```
+
 ### Button component
 
 ```javascript
