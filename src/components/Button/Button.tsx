@@ -1,6 +1,9 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 
+// Import components from inside the component library
+import { Icon } from "../Icon";
+
 // Shared CSS properties for the <button> and link elements
 const ButtonStyle = styled.button`
 	display: inline-block;
@@ -15,10 +18,11 @@ type ButtonProps = {
 	size?: "small" | "medium" | "large",
 	openAsTab?: boolean,
 	disabled?: boolean,
+	icon?: string,
 	children: string
 };
 
-export const Button: FC<ButtonProps> = ({ type = "button", url, onClick, size, openAsTab, disabled, children }) => {
+export const Button: FC<ButtonProps> = ({ type = "button", icon, url, onClick, size, openAsTab, disabled, children }) => {
 
 	// Check if the component has a url prop value that matches those listed
 	const isLink = url && (url.includes("http") || url.startsWith("#") || url.startsWith("mailto") || url.startsWith("/"));
@@ -29,7 +33,13 @@ export const Button: FC<ButtonProps> = ({ type = "button", url, onClick, size, o
 
 	// This method will render a <button> element
 	const renderAsButton = () =>
-		<ButtonStyle {...{ type, size, onClick, disabled }}>{children}</ButtonStyle>
+		<ButtonStyle {...{ type, size, onClick, disabled }}>
+			{/* Render icon if the icon prop is passed into the button with a string value */}
+			{icon && (
+				<Icon iconName={icon} />
+			)}
+			{children}
+		</ButtonStyle>
 
 	return (
 		/*
