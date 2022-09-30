@@ -6,9 +6,6 @@ type LinkProps = {
     children: string
 }
 
-export const Link: FC<LinkProps> = ({ url, openAsTab, children }) => {
-
-    return (
-        <a href={url} target={openAsTab ? "blank" : undefined}>{children}</a>
-    )
-};
+export const Link: FC<LinkProps> = ({ url, openAsTab, children }) => (
+    <a href={url} target={openAsTab ? "blank" : undefined}>{children}</a>
+);

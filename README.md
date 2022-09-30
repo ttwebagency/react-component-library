@@ -68,6 +68,20 @@ Begin by importing the library and the components required, into your React appl
 import { Layout, Button, Link } from "@ttwebagency/react-component-library";
 ```
 
+### Container component
+
+```javascript
+import { Container } from "@ttwebagency/react-component-library";
+```
+
+Acts as a wrapper around content on the page, usually used with a `Responsive Grid` layout to prevent the page content expanding beyond `1200px` width on large screens.
+
+```javascript
+<Container>
+    <p>Page content goes here.</p>
+</Container>
+```
+
 ### Icon component
 
 ```javascript
