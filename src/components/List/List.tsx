@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-export interface ListProps {
+type ListProps = {
     type: "ul" | "ol",
     list: []
 };

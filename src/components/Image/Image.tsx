@@ -1,6 +1,6 @@
 import React from "react";
 
-export type ImageProps = {
+type ImageProps = {
     src: string,
     height: string,
     width: string,

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-export interface LabelProps {
+type LabelProps = {
     name: string,
     children: string
 };

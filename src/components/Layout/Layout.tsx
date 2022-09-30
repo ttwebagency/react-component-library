@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
-export interface LayoutProps {
-    children: string
+type LayoutProps = {
+    children: any
 };
 
 export const Layout: FC<LayoutProps> = ({ children }) => {

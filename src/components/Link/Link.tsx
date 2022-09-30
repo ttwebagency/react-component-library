@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-export interface LinkProps {
+type LinkProps = {
     url: string,
     openAsTab?: boolean,
     children: string

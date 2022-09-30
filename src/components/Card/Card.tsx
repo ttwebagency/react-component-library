@@ -20,7 +20,7 @@ const CardContentStyling = styled.div`
     flex-grow: 1;
 `;
 
-export interface CardProps {
+type CardProps = {
     children: string
 };
 
