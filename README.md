@@ -46,6 +46,12 @@ registry=https://registry.npmjs.org/
 ```
 The `authToken=AUTH_TOKEN_HERE` value should be replaced with an Auth Token. A token can be requested by emailing: contact@thetinywebagency.com
 
+The `authToken` example will look something like this:
+
+```
+authToken=12347a6b-1ab2-34a5-xxxx-1xa111222333
+```
+
 ### Install the package
 
 In your React application folder, install the `react-component-library` using `npm`:
@@ -68,6 +74,20 @@ Begin by importing the library and the components required, into your React appl
 import { Layout, Button, Link } from "@ttwebagency/react-component-library";
 ```
 
+### Layout component
+
+```javascript
+import { Layout } from "@ttwebagency/react-component-library";
+```
+
+Apply a component that allows a consistant layout across multiple pages within the application. Ideal for header and footer components to be applied.
+
+```javascript
+<Layout>
+    <p>The page content goes here.</p>
+</Layout>
+```
+
 ### Container component
 
 ```javascript
@@ -76,10 +96,16 @@ import { Container } from "@ttwebagency/react-component-library";
 
 Acts as a wrapper around content on the page, usually used with a `Responsive Grid` layout to prevent the page content expanding beyond `1200px` width on large screens.
 
+The `Container` component is often used with the `Layout` component.
+
+This will add the HTML `<main>` element.
+
 ```javascript
-<Container>
-    <p>Page content goes here.</p>
-</Container>
+<Layout>
+    <Container>
+        <p>Page content goes here.</p>
+    </Container>
+</Layout>
 ```
 
 ### Icon component
@@ -180,22 +206,6 @@ Render a `<label>` element for forms within the application. The `name` prop val
 
 ```javascript
 <Label name="firstName">First name:</Label>
-```
-
-### Layout component
-
-```javascript
-import { Layout } from "@ttwebagency/react-component-library";
-```
-
-Apply a component that allows a consistant layout across multiple pages within the application. Ideal for header and footer components to be applied.
-
-Adds the `<main>` element to the application.
-
-```javascript
-<Layout>
-    <p>The page content goes here.</p>
-</Layout>
 ```
 
 ### Link component

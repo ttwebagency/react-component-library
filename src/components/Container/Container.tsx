@@ -1,7 +1,8 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 
-const ContainerStyles = styled.div`
+const ContainerStyles = styled.main`
+    display: block;
     max-width: 1200px;
     margin: 0 auto;
 `;
@@ -11,7 +12,7 @@ type ContainerProps = {
 }
 
 export const Container: FC<ContainerProps> = ({ children }) => (
-    <ContainerStyles>
+    <ContainerStyles role="main">
         {children}
     </ContainerStyles>
 );

@@ -7,8 +7,8 @@ type LayoutProps = {
 export const Layout: FC<LayoutProps> = ({ children }) => {
 
     return (
-        <main role="main">
+        <>
             {children}
-        </main>
+        </>
     )
 };
