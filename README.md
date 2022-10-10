@@ -196,6 +196,12 @@ To open a link in a new browser tab/window, use the `openAsTab` prop:
 <Image url="https://example.com" src="img/imageone.jpg" width="200" height="200" alt="Example image." openAsTab />
 ```
 
+To set the `fetchpriority` hint to `high`, `low` or `auto`. This will only work in `Chromium` browsers.
+
+```javascript
+<Image src="img/imageone.jpg" width="200" height="200" fetchpriority="high" alt="Example image." />
+```
+
 ### Label component
 
 ```javascript

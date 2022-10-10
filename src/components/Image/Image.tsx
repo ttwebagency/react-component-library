@@ -7,20 +7,21 @@ type ImageProps = {
     alt: string,
     url?: string,
     openAsTab?: boolean,
-    lazyLoad?: boolean
+    lazyLoad?: boolean,
+    fetchpriority?: "high" | "low" | "auto",
 }
 
-export const Image = ({ src, height, width, alt, url, openAsTab, lazyLoad }: ImageProps) => {
+export const Image = ({ src, height, width, alt, url, openAsTab, lazyLoad, fetchpriority }: ImageProps) => {
 
     const isLink = url && (url.includes("http") || url.startsWith("#") || url.startsWith("mailto") || url.startsWith("/"));
 
     const renderLink = () =>
         <a href={url} target={openAsTab ? "blank" : undefined}>
-            <img {...{ src, height, width, alt }} loading={lazyLoad ? "lazy" : "eager" } />
+            <img {...{ src, fetchpriority, height, width, alt }} loading={lazyLoad ? "lazy" : "eager" } />
         </a>
 
     const renderImage = () =>
-        <img {...{ src, height, width, alt}} loading={lazyLoad ? "lazy" : "eager"} />
+        <img {...{ src, fetchpriority, height, width, alt}} loading={lazyLoad ? "lazy" : "eager"} />
     
     return (
         isLink ? renderLink() : renderImage()
