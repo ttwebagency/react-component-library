@@ -31,7 +31,7 @@ $ nvm use
 
 ## Run
 ```
-npm run build
+$ npm run build
 ```
 
 ## Updating & Publishing the Component Library
@@ -69,11 +69,11 @@ authToken=12347a6b-1ab2-34a5-xxxx-1xa111222333
 
 In your React application folder, install the `react-component-library` using `npm`:
 ```
-npm install @ttwebagency/react-component-library
+$ npm install @ttwebagency/react-component-library
 ```
 This will install the latest version. To install a specific version of the `react-component-library` use this command:
 ```
-npm install @ttwebagency/react-component-library@0.5.3
+$ npm install @ttwebagency/react-component-library@0.5.3
 ```
 
 ## Components
