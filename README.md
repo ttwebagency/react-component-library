@@ -16,6 +16,19 @@ The `react-component-library` is hosted on GitHub.
 + `Rollup` (2.75.5)
 + `styled-components` (5.3.5)
 
+## Set Node version
+We use `nvm (Node Version Manager)` to manage Node versions within the React Component Library. Installing `nvm` is recommended to allow different Node versions to be used. Open the terminal and navigate to the root of the project folder, then install the Node version (if not already done):
+
+```
+$ nvm install
+```
+
+If this step has been completed previously, we can then apply the Node version specified within the `.nvmrc` config file.
+
+```
+$ nvm use
+```
+
 ## Run
 ```
 npm run build
