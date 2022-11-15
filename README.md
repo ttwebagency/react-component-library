@@ -6,8 +6,8 @@ The `react-component-library` is hosted on GitHub.
 
 ## Requirements
 
-+ `Node` (16.13.2 and above)
-+ `npm` (8.1.2 and above)
++ `Node` (19.1.0 and above)
++ `npm` (8.19.3 and above)
 
 ## Technology Stack
 
