@@ -121,6 +121,37 @@ This will add the HTML `<main>` element.
 </Layout>
 ```
 
+### Heading component
+
+```javascript
+import { Heading } from "@ttwebagency/react-component-library";
+```
+
+Render a `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` or `<h6>` heading element.
+
+```javascript
+// This will render a <h1> element
+<Heading level={1}>H1 Heading</Heading>
+
+// This will render a <h2> element
+<Heading level={2}>H2 Heading</Heading>
+
+// This will render a <h3> element
+<Heading level={3}>H3 Heading</Heading>
+
+// This will render a <h4> element
+<Heading level={4}>H4 Heading</Heading>
+
+// This will render a <h5> element
+<Heading level={5}>H5 Heading</Heading>
+
+// This will render a <h6> element
+<Heading level={6}>H6 Heading</Heading>
+
+// Add classes to the heading element
+<Heading level={6} className="font-bold">H6 Heading</Heading>
+```
+
 ### Icon component
 
 ```javascript
